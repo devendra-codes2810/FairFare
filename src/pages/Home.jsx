@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MapEmbed } from '../components/Footer';
 
 // Home page – hero, search, feature cards, stats, map
 function Home() {
   const [query, setQuery] = useState('');
   const [result, setResult] = useState('');
-  const navigate = useNavigate();
 
   const searchMap = [
     { keys:['auto','fare','taxi','rickshaw','ride'], ans:'Station → Dashashwamedh Ghat auto fare is ₹80–120.', link:'/transport', linkText:'Open Fare Calculator' },
